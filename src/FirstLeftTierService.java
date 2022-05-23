@@ -1,10 +1,10 @@
-public class firstRightTierService {
+public class FirstLeftTierService {
 
-    public double calculate1FirstRightTier(double gradL, double minuteL, double secondL, double gradR, double minuteR,
-                                          double secondR, double S, double D) {
+    public double calculate1FirstLeftTier(double gradL, double minuteL, double secondL, double gradR, double minuteR,
+                             double secondR, double S, double D) {
 
-        zeroRightTierService serviceZRT = new zeroRightTierService();
-        double zeroRightTier = serviceZRT.calculateZeroRightTier(0, 0, 0, 0, 49, 14);
+        ZeroLeftTierService serviceZLT = new ZeroLeftTierService();
+        double zeroLeftTier = serviceZLT.calculateZeroLeftTier(double gradZL, double minuteZL, double secondZL, double gradZR, double minuteZR, double secondZR);
 
         double results;
 
@@ -24,7 +24,7 @@ public class firstRightTierService {
 
         double distance = D + radius;
 
-        double alfaRad = Math.toRadians(alfa - zeroRightTier);
+        double alfaRad = Math.toRadians(alfa - zeroLeftTier);
         double deviation = Math.sin(alfaRad) * distance;
 
         results = deviation;

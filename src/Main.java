@@ -1,25 +1,27 @@
 public class Main {
     public static void main(String[] args) {
 
-        zeroLeftTierService serviceZLT = new zeroLeftTierService();
+        ZeroLeftTierService serviceZLT = new ZeroLeftTierService();
         double zeroLeftTier = serviceZLT.calculateZeroLeftTier(0, 0, 0, 0, 37, 22);
 
 
 
-        zeroRightTierService serviceZRT = new zeroRightTierService();
+        ZeroRightTierService serviceZRT = new ZeroRightTierService();
         double zeroRightTier = serviceZRT.calculateZeroRightTier(0, 0, 0, 0, 49, 14);
 
 
 
-        firstLeftTierService serviceFLT = new firstLeftTierService();
+        FirstLeftTierService serviceFLT = new FirstLeftTierService();
         double firstLeftTier = serviceFLT.calculate1FirstLeftTier(0, 4, 40, 0, 42, 0,
                 54.319,51.938);
 
 
 
-        firstRightTierService serviceFRT = new firstRightTierService();
+        FirstRightTierService serviceFRT = new FirstRightTierService();
         double firstRightTier = serviceFRT.calculate1FirstRightTier(0, -32, -20, 0, 17, 22,
                 41.868,38.8839);
+
+
 
 
         System.out.println();

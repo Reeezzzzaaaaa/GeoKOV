@@ -1,4 +1,4 @@
-public class zeroRightTierService {
+public class ZeroRightTierService {
 
     public double calculateZeroRightTier(double gradZL, double minuteZL, double secondZL, double gradZR, double minuteZR, double secondZR) {
 
